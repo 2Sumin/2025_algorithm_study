@@ -1,4 +1,4 @@
-# [level 2] 최솟값 만들기 - 12941 
+# [level 2] 최솟값 만들기 - 12941 (W1_#02)
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12941) 
 
