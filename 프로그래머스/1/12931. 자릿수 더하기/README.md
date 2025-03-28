@@ -1,4 +1,4 @@
-# [level 1] 자릿수 더하기 - 12931 
+# [level 1] 자릿수 더하기 - 12931 (W1_#03)
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12931) 
 
