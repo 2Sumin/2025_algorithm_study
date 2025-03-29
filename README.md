@@ -25,7 +25,7 @@
 |------|-----------|
 | **W1~2** | 🔹 LV1 2문제<br>🔸 LV2 1문제 |
 | **W3**   | 🔹 LV1 2문제<br>🔸 LV2 2문제 |
-| **중간고사 1주 전** | ⏱️ 이틀마다 🔸 LV2 1문제 |
+| **중간고사 1주 전** | 이틀마다 🔸 LV2 1문제 |
 | **W4~6** | 🔹 LV1 1문제<br>🔸 LV2 3문제 |
 
 ### 📝 주간 리뷰
@@ -36,7 +36,7 @@
 
 ## 📁 폴더 구조
 
-> [`baekjunhub` 스타일](https://github.com/baekjoonhub/BaekjoonHub) 기반으로 폴더 구성합니다.
+> [`baekjunhub` 스타일](https://github.com/baekjoonhub/BaekjoonHub) 기반으로 폴더 구성
 - `README.md`에는 문제 설명 및 간단한 접근 방식을 기록
 - 코드 파일은 각자 이니셜을 접두어로 작성  
   예: `sm_두 정수 사이의 합.py`, `yj_두 정수 사이의 합.py`
