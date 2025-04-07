@@ -22,12 +22,12 @@ def solution(bridge_length, weight, truck_weights):
         out_truck = bridge.popleft()
         weight_cumm -= out_truck 
         
-        if truck_weights:
-            if weight_cumm + truck_weights[0] <= weight:
+        if truck_weights: 
+            if weight_cumm + truck_weights[0] <= weight: # 현재 다리 위 무게 + 새로운 트럭의 무게가 총 무게 한도 내이면
                 truck = truck_weights.popleft()
                 bridge.append(truck)
                 weight_cumm += truck
-            else :
+            else : # 총 한도를 넘었으면 트럭말고 0 을 넣음 (시간의 흐름 반영)
                 bridge.append(0) 
         
         
