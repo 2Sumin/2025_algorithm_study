@@ -14,7 +14,7 @@ def solution(priorities, location):
         # 현재 프로세스보다 우선순위가 높은 프로세스가 큐에 있는지 확인
         flag_process_priority = False
         for i in queue:
-            if i[0] > current[0]:
+            if i[0] > current[0]: # current 의 첫 원소 - popped priorities 
                 flag_process_priority = True
                 break
 
