@@ -9,18 +9,18 @@ def solution(bridge_length, weight, truck_weights):
     # 다리 위에서 bridge_length초 지난 트럭은 빠져야 함. 
     # 남은 거리 == 0 이면 맨 앞 트럭 제거 
     
-    t = 0
+    t = 0 # 리턴값 : 다리 통과에 총 몇초 소요?
     weight_cumm = 0 # 다리위의 시점별 무게
     out_truck = 0
     
     bridge = deque([0] * bridge_length) # 처음 다리 위(한대도 없는 상태)
-    truck_weights = deque(truck_weights) # 꺼낼때 편하게 리스트 -> 큐 구조로 바꿔줌
+    truck_weights = deque(truck_weights) # 꺼낼 때 편하게 리스트 -> 큐 구조로 바꿔줌 (AI 도움)
     
     while weight_cumm or len(truck_weights) > 0 :
-        t += 1
+        t += 1 # 차가 들어올 때 1초 소요 
     
         out_truck = bridge.popleft()
-        weight_cumm -= out_truck
+        weight_cumm -= out_truck 
         
         if truck_weights:
             if weight_cumm + truck_weights[0] <= weight:
