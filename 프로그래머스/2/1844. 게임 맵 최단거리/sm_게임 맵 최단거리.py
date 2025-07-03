@@ -4,7 +4,8 @@ def solution(maps):
     # 최단거리 -> bfs    
     row_len = len(maps)
     col_len = len(maps[0])
-    
+
+    # 출발지나 목적지가 벽(0)이면 끝냄
     if (maps[0][0] == 0 or maps[row_len-1][col_len-1] == 0):
         return -1
     
@@ -17,6 +18,7 @@ def solution(maps):
     
     while q:
         cur_r, cur_c = q.popleft()
+        # 목적지에 도착했다면 
         if cur_r == row_len-1 and cur_c == col_len-1:
             return maps[cur_r][cur_c]
         for dr, dc in directions:
@@ -26,5 +28,6 @@ def solution(maps):
                 if maps[next_r][next_c] == 1 and not visited[next_r][next_c]:
                     q.append((next_r, next_c))
                     maps[next_r][next_c] = maps[cur_r][cur_c] + 1
-    
+
+    # 목적지에 도착하지 못했다면 
     return -1   
