@@ -1,15 +1,9 @@
-def solution(citations):
+def solution(array, commands):
+    answer = []
     
-    citations.sort(reverse=True)  # 내림차순 정렬
-    h = 0
-    for i, c in enumerate(citations):
-        if c >= i + 1:  # c : 인용 수, 지금까지 본 논문 개수 : i+1
-            h = i + 1
-        else:
-            break
-            
-            
+    for i ,j, k in commands:
+        s =array[i-1:j]
+        s.sort()
+        answer.append(s[k-1])
     
-
-            
-    return h
+    return answer
